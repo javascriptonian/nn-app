@@ -4,6 +4,8 @@ const routes = require('./routes')
 
 const app = express()
 
+app.set('view engine', 'ejs')
+
 app.use(middlewares)
 app.use(routes)
 
