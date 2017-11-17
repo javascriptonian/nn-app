@@ -7,7 +7,15 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "pm2": "^2.7.2",
     "serve-static": "^1.13.1",
     "socket.io": "^2.0.4"
+  },
+  "scripts": {
+    "start": "pm2 start app.js && pm2 logs",
+    "list": "pm2 ls",
+    "monitor": "pm2 monit",
+    "logs": "pm2 logs",
+    "rm": "pm2 delete all"
   }
 }
